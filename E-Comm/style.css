@@ -1,0 +1,147 @@
+body{
+    color: black;
+}
+.container{
+    padding-top: 50px;
+}
+hr{
+    width: 300px;
+    border: 1px solid #000000;
+}
+
+.product-grid{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    /* height: 500px; */
+}
+.product-grid:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ;
+}
+.image{
+    position: relative;
+}
+
+
+.overlay{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(130, 135, 135, 0.7);
+}
+.image:hover .overlay{
+    opacity: 1;
+}
+.detail{
+    color: #ffffff;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    -ms-transform: translate(-50%,-50%);
+}
+.buy{
+    background-color: transparent;
+    color: #434444;
+    border-radius: 0;
+    border: 1px solid #434444;
+    width: 100%;
+    margin-top:2%;
+}
+.buy:hover{
+    background-color: #434444;
+    color: #ffffff;
+}
+.gotocart{
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background: rgb(22, 191, 238);
+    bottom: 40px;
+    right: 50px;
+    border-radius: 50px;
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 22px;
+
+}
+.gotocart:hover{
+   color: #ffffff;
+   background: rgb(0, 0, 0);
+
+}
+.newArrival{
+    background: green;
+    width: 50px;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+}
+.col-md-7 h2{
+    color: #555555;
+}
+.quantity{
+    border: 1px solid #ccc;
+    font-weight: bold;
+    height: 33px;
+    text-align: center;
+    width: 50px;
+}
+.w-100{
+    height: 400px;
+}
+
+.cartBtn{
+    background-color: transparent;
+    color: #434444;
+    border-radius: 0;
+    border: 1px solid #434444;
+    width: 100%;
+    margin-top:2%;
+
+}
+.cartBtn:hover{
+    background-color: #434444;
+    color: #ffffff;
+}
+.purchase{
+    float: right;
+    margin-top: 20px;
+    padding: 10px;
+}
+.toolTip{
+    width: 80px;
+    background: black;
+    padding: 15px;
+    text-align: center;
+    border-radius: 8px;
+    display: block;
+    color: #ffffff;
+    margin: 0 auto;
+    margin-bottom: 200px;
+    /* opacity: 0; */
+    transition: 0.6s opacity;
+}
+.toolTip:before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    top: -6px;
+    background: black;
+    z-index: -1;
+    left: 40px;
+    transform: translateX(-50%) rotate(45deg);
+
+}
+.toolTip:hover{
+    opacity: 1;
+}
